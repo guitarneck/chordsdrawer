@@ -1,0 +1,26 @@
+{
+  "name": "chordsmaker",
+  "version": "1.0.0",
+  "description": "A quick chords maker for guitarists",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "font-builder": "./src/fontawesome-builder.js"
+  },
+  "author": "Laurent STEFAN",
+  "license": "MIT",
+  "devDependencies": {
+    "@fortawesome/fontawesome": "^1.1.3",
+    "@fortawesome/fontawesome-free-brands": "^5.0.6",
+    "@fortawesome/fontawesome-free-regular": "^5.0.6",
+    "@fortawesome/fontawesome-free-solid": "^5.0.6",
+    "chai": "^4.1.2",
+    "handlebars": "^4.0.11",
+    "mocha": "^5.0.1",
+    "normalize.css": "^8.0.0",
+    "through2": "^2.0.3",
+    "tosource": "^1.0.0",
+    "uglify-js": "^3.3.12",
+    "uglifycss": "0.0.27"
+  }
+}

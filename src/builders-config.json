@@ -1,0 +1,15 @@
+{
+    "options"       : {
+        "destCSS": "css/",
+        "destJS" : "js/"
+    },
+
+    "free-solid"    : {
+        "prefix": "fas",
+        "icons" : ["faBars","faTimes","faPrint"]
+    },
+    "free-regular"  : {
+        "prefix": "far",
+        "icons" : ["faSave","faFile","faTrashAlt","faFolderOpen","faCopy","faMinusSquare","faPlusSquare","faTimesCircle"]
+    }
+}

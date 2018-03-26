@@ -1,0 +1,20 @@
+# Coverage directory
+coverage
+
+# Coveralls repo
+.coveralls.yml
+
+# Dependency directory
+node_modules/
+
+# NPM cache directory
+.npm
+
+# Mac Destop Serices file system
+.DS_Store
+
+# XCode workspace
+*.xcworkspace/*
+
+#temporary directory
+tmp/
