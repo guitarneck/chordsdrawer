@@ -7,6 +7,13 @@
     "test": "mocha",
     "font-builder": "./src/fontawesome-builder.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guitarneck/chordsdrawer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/guitarneck/chordsdrawer/issues"
+  },
   "author": "Laurent STEFAN",
   "license": "MIT",
   "devDependencies": {
