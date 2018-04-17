@@ -7,6 +7,9 @@ const uglifyjs  = require('uglify-js'),
       fs        = require('fs'),
       path      = require('path');
 
+const handlebars  = require('handlebars'),
+      through     = require('through2');
+
 const config    = require(__dirname+'/builders-config.json');
 
 let entries = {}, ugli;
@@ -35,6 +38,28 @@ create_entries ( files )
     }
     return entries;
 }
+
+/**
+ * HTML-Builders
+ */
+
+const killCache = (new Date()).getTime();
+
+handlebars.registerHelper('kill-cache' ,function() {
+    return new handlebars.SafeString(killCache);
+});
+
+console.time('HTML-Builder');
+fs.createReadStream(__dirname+'/chordsdrawer/chordsdrawer-template.html')
+  .pipe(
+    through.obj(function ( buffer ,enc ,callback ) {
+        const template = handlebars.compile(buffer.toString(enc),{noEscape:true});
+        callback( null ,Buffer.from(template({}) ,enc) );
+    })
+  )
+  .pipe(fs.createWriteStream('chordsdrawer.html'))
+  .on( 'close', function () { console.log("chordsdrawer.html created"); console.timeEnd('HTML-Builder'); } )
+  .on( 'error', function () { console.error("chordsdrawer.html failed !"); } );
 
 /**
  * DOM-Builders

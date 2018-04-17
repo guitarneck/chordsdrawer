@@ -124,10 +124,12 @@ ChordsDrawer ()
         var image = DOMHelper.byId(this.editor.chordId);
         if ( image != null )
         {
-            var copy = Chord.create();
+            var copy = Chord.create( image.title ,image.strings ,image.start );
+            /*
             copy.title     = image.title;
             copy.start     = image.start;
             copy.strings   = image.strings;
+            */
             this.addChord( copy );
             this.editor.updateChord( copy );
         }
