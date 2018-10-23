@@ -6,7 +6,7 @@
 
     "free-solid"    : {
         "prefix": "fas",
-        "icons" : ["faBars","faTimes","faPrint"]
+        "icons" : ["faBars","faTimes","faPrint","faPencilAlt","faWrench","faSlidersH","faCogs"]
     },
     "free-regular"  : {
         "prefix": "far",
