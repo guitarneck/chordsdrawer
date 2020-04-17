@@ -1,3 +1,8 @@
+body
+{
+	-moz-osx-font-smoothing: grayscale;
+}
+
 @font-face
 { 
     font-family: "chords font";

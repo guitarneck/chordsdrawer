@@ -106,6 +106,7 @@ Composer ()
         image.title = chord.title;    
         image.start = chord.start;
         image.strings = chord.strings;
+        image.classList = chord.classList;
     
         DOMHelper.replace( layout.images, chord ,image );
 
@@ -151,10 +152,12 @@ Composer ()
         this.fireSelect =
         function (e)
         {
-            var self = this.self;
+            var self    = this.self;
             var chordId = e.target.id;
+            var chords  = ChordsDrawer.chords();
+            for ( var i = 0, l = chords.length ; i<l ; i++ ) chords[i].classList.remove('selected-chord');
+            ChordsDrawer.getChord(chordId).classList.add('selected-chord');
             ChordsDrawer.updateForChord( self ,chordId );
-            
         }
 
         this.fireLoad =

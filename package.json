@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "font-builder": "./src/fontawesome-builder.js"
+    "font-builder": "./src/fontawesome-builder.js",
+    "chord-builder":"./src/chordsdrawer-builder.js"
   },
   "repository": {
     "type": "git",

@@ -129,3 +129,26 @@ button:active, input[type=reset]:active, input[type=button]:active
 {
     padding:4px;
 }
+
+@media only screen
+{
+    #composergrid img.selected-chord
+    {
+        padding:2px;
+        border:2px outset #79b;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+            -ms-border-radius: 8px;
+            -o-border-radius: 8px;
+                border-radius: 8px;
+
+    }
+}
+/*
+@media print {
+    #composergrid img.selected-chord
+    {
+        padding:4px;
+    }        
+}
+*/

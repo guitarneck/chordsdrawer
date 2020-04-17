@@ -16,5 +16,11 @@ node_modules/
 # XCode workspace
 *.xcworkspace/*
 
-#temporary directory
+# temporary directory
 tmp/
+
+# vscode preferences
+.vscode
+
+# Temporary :
+libs/
